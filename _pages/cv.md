@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<p><a class="btn btn--primary" href="{{ base_path }}/files/cv.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download CV as PDF</a></p>
+
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)

@@ -1,0 +1,39 @@
+---
+layout: archive
+title: "Tutorials"
+permalink: /tutorials/
+author_profile: true
+---
+
+{% include base_path %}
+
+Placeholder content: technical guides (OpenFOAM, ANSYS Fluent, Deep Learning, etc.) will be listed here. Add each guide as a Markdown file in the `_tutorials/` folder and it will appear automatically.
+{: .notice}
+
+<h2>OpenFOAM</h2>
+{% for post in site.tutorials reversed %}
+  {% if post.topic == 'openfoam' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>ANSYS Fluent</h2>
+{% for post in site.tutorials reversed %}
+  {% if post.topic == 'fluent' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Deep Learning</h2>
+{% for post in site.tutorials reversed %}
+  {% if post.topic == 'deep-learning' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Other topics</h2>
+{% for post in site.tutorials reversed %}
+  {% if post.topic != 'openfoam' and post.topic != 'fluent' and post.topic != 'deep-learning' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
